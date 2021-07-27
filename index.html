@@ -1,0 +1,519 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zippy</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" SameSite=None>
+</head>
+
+<style media="screen">
+	@media screen and ( min-width: 768px ) {
+	  /* half-width cells for larger devices */
+	  .carousel-cell { width: 50%; }
+	}
+	.carousel{
+	width:60%;
+	margin-left:20%;
+	}
+	.carousel-cell{
+	width:80%;
+	margin-right:100px;
+	overflow:hidden;
+	margin-bottom : 0px;
+	height:400px;
+	}
+	.carousel-cell:before{
+	display:block;
+	}
+	
+	.flickity-page-dots {
+	  transform: translate(0,100px);
+	  margin-top:0px;
+	  
+	}
+	/* white circles */
+	.flickity-page-dots .dot {
+	margin-right:0px;
+	margin-left:0px;
+	margin-top:0px;
+	  width: 60px;
+	  height: 60px;
+	  opacity: 1;
+	  background-image : url("img1.jpg");
+	  background-size:cover;
+	  border: 2px solid lightgray;
+	 border-radius : 2px;
+	}
+	/* fill-in selected dot */
+	.flickity-page-dots .dot.is-selected {
+	 opacity:0.2;
+	}
+</style>
+
+<body>
+	<div id="sec1">
+		<div id="test">
+			<div id="sec1content">
+				<nav>
+				<h1 id="zippy">ZIPPY</h1>
+				<div id="toptabdiv">
+					<header>
+					<i class="fas fa-times" onclick="hideMenu()"></i>
+					<ul >
+						<li class="toptab"><a href = #home-section>Home</a></li>
+						<li class="toptab"><a href = #projects-section>Projects</a></li>
+						<li class="toptab"><a href = #pricing-section>Pricing</a></li>
+						<li class="toptab"><a href = #team-section>Team</a></li>
+						<li class="toptab"><a href = #blog-section>Blog</a></li>
+						<li class="toptab"><a href = #contact-section>Contact</a></li>
+					</ul>
+				</header>
+				</div>
+				<script type="text/javascript">
+					window.addEventListener("scroll",function(){
+						var header=document.getElementById("toptabdiv");
+						header.classList.toggle("sticky",window.scrollY >0);
+					})
+				</script>
+				
+				<i class="fas fa-bars" id="bars" onclick="showMenu()"></i>
+				</nav>
+				
+			</div>
+			<div class=text-box>
+			<div id="writingmain">
+				<p>One page promising to<br> fill all your needs!</p>
+			
+			</div>
+			<div id="writingsub">
+				<p>This is photoshop's version of Lorem Ipsum.Proin<br> gravida nibh vel velitauctor aliquet.</p>
+			</div>
+			</div>
+			<div id="buttons">
+				
+				<button class="learnmorebtn" >LEARN MORE</button>
+				<button class="learnmorebtn">LEARN MORE</button>
+			</div>
+			<div>
+				<br><br><br><br><br><br><p id="fourdots">....</p>
+			
+			</div>
+			
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+	
+	<script>
+		var toptabdiv = document.getElementById("toptabdiv");
+		function showMenu(){
+			toptabdiv.style.right="0";
+		}
+		function hideMenu(){
+			toptabdiv.style.right="-200";
+		}
+	</script>
+	<section id="home-section"></section>
+	
+	<div id="sec2">
+		<div id="test2">
+		<br>
+			<h1 id="welcome">Welcome to Zippy</h1>
+			<p id="welcomewriting">This is Photoshop's version of Lorem Ipsum. Lorem Ipsum. Proin gravida nibhLorem Ipsum. vel velit aliquet.Aenean Lorem Ipsum. Proin bo licitudin, lorem quis Lorem Ipsum. Proin gravidaa auctor.</p>
+			<img id="umbrella" src="images/sec2umbrella.png">
+			<br><br><br><br><br>
+			<div id="list">
+				<ul>
+					<li  id="circleicons">
+						
+						<img id="circleicon" src="images/bell.png"/>
+						<p id="icontitle">Lorem Ipsum</p>
+						<p id="iconwriting">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eos ipsa error a fugiat corrupti labore vero cumque aperiam aspernatur? Natus omnis reiciendis consequatur officiis voluptates, ea praesentium delectus soluta.
+						</p>
+						<button id="iconlearns">Learn More</button><br>
+					</li>
+					<li  id="circleicons">
+						<img id="circleicon" src="images/letter.png"/>
+						<p id="icontitle">Dolor Sit</p>
+						<p id="iconwriting">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eos ipsa error a fugiat corrupti labore vero cumque aperiam aspernatur? Natus omnis reiciendis consequatur officiis voluptates, ea praesentium delectus soluta.
+						</p>
+						<button id="iconlearns">Learn More</button><br>
+					</li>
+					<li  id="circleicons">
+						<img id="circleicon" src="images/petti.png"/>
+						<p id="icontitle">Consectures</p>
+						<p id="iconwriting">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eos ipsa error a fugiat corrupti labore vero cumque aperiam aspernatur? Natus omnis reiciendis consequatur officiis voluptates, ea praesentium delectus soluta.
+						</p>
+						<button id="iconlearns">Learn More</button><br>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div id="borderline"></div>	
+	</div>
+	</section>
+	<section id="projects-section">
+	<div id="sec3">
+		<br>
+		<div id="test3">
+			<h1 id="projectheading">Projects</h1>
+		</div>
+		<div id="brochure">
+			<ul>
+				<li id="brochli">
+					<img id="brochimg" src="images/broch1.jpg">
+					<div id="brochwrite" >
+						<h3 id="brochhead">Project Topic</h3>
+						<p id="writingbroch">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam et amet eligendi ip</p>
+						<button id="casestudy">Launch Case Study</button>
+					</div>
+					
+				</li>
+				<li id="brochli">
+					<img id="brochimg"  src="images/broch2.jpg">
+					<div id="brochwrite2"  >
+						<h3 id="brochhead">Project Topic</h3>
+						<p id="writingbroch">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam et amet eligendi ip</p>
+						<button id="casestudy">Launch Case Study</button>
+					</div>
+					
+				</li>
+				<li id="brochli" >
+					<img id="brochimg" src="images/broch3.jpg">
+					<div id="brochwrite"  >
+						<h3 id="brochhead">Project Topic</h3>
+						<p id="writingbroch">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam et amet eligendi ip</p>
+						<button id="casestudy">Launch Case Study</button>
+					</div>
+					
+				</li>
+				<li id="brochli">
+					<img id="brochimg"  src="images/broch4.jpg">
+					<div id="brochwrite2" >
+						<h3 id="brochhead">Project Topic</h3>
+						<p id="writingbroch">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam et amet eligendi ip</p>
+						<button id="casestudy">Launch Case Study</button>
+					</div>
+					
+				</li>
+			</ul>
+		
+		</div>
+
+	</div>
+	</section>
+	<section id="pricing-section">
+	<div id="sec4">
+		<div id="test4">
+			<br>
+			<h1 id="pricingheading">Pricing Table</h1>	
+			<ul id="pricingul">
+				<li id="pricingli">
+					<h5 id="priceh5">STANDARD PLAN</h5>
+					<p id="price">Free</p>
+					<p id="pricewrite" >2 GB Available<br> 15 max contacts<br>30 Messages perday<br>Outgoing Audio</p><br>
+					<button id="buybtn">BUY</button>
+				</li>
+				<li id="pricingli" class="midli">
+					<h5  id="priceh5">BUSINESS PLAN</h5>
+					<p id="price">195/MONTH</p>
+					<p id="pricewrite" >2 GB Available<br> 15 max contacts<br>30 Messages perday<br>Outgoing Audio</p><br>
+					<button id="buybtn">BUY</button>
+				</li>
+				</li>
+				<li id="pricingli">
+					<h5  id="priceh5">PREMIUM PLAN</h5>
+					<p id="price">145/MONTH</p>
+					<p id="pricewrite" >2 GB Available<br> 15 max contacts<br>30 Messages perday<br>Outgoing Audio</p><br>
+					<button id="buybtn">BUY</button>
+				</li>
+				</li>
+			</ul>
+
+
+		</div>
+		
+	</div>
+	</section>
+	
+	<div id="sec5">
+		<div id="test5">
+			<br>
+			<h1 id="Videoheading">Video Projects</h1><br>
+			<div id="hori_slider">
+				<div id="slidercontainer">
+					<div >
+						<video  id="item" width="320" height="240" controls>
+							<source src="images/movie.mp4" type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+							
+						  </video>
+						 
+					</div>
+					<div >
+						<video id="item" width="320" height="240" controls>
+							<source src="images/movie2.mp4" type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+						  </video>
+						  
+
+
+					</div>
+					<div >
+						<video id="item" width="320" height="240" controls>
+							<source src="images/movie3.mp4" type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+						  </video>
+						
+
+
+					</div>
+					<div >
+						<video id="item" width="320" height="240" controls>
+							<source src="images/movie.mp4" type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+						  </video>
+						 
+
+
+					</div>
+					<div >
+						<video id="item" width="320" height="240" controls>
+							<source src="images/movie2.mp4" type="video/mp4">
+							<source src="movie.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+							<p id="videotitle">Video Name</p>
+						  </video>
+						 
+
+
+					</div>
+			
+				</div>
+			</div>
+		</div>
+	</div>
+	<section id="team-section">
+	<div id="sec6">
+		<div id="test6">
+		
+			<h1 id="teamheading">Zippy Team</h1>
+			<div id="row1">
+				<div id="person">
+					<img id="personpic" src="images/head.jpg">
+					<h5 id="personname">SARA JOHNSON</h5>
+					<p id="persondescri">Creative Head</p>
+				</div>
+				<div id="person">
+					<img id="personpic" src="images/head2.jpg">
+					<h5 id="personname">MATT ALEX</h5>
+					<p id="persondescri">Creative Head</p>
+				</div>
+				<div id="person">
+					<img id="personpic" src="images/head3.jpg">
+					<h5 id="personname">CHRIS PHILIPS</h5>
+					<p id="persondescri">Art Director</p>
+				</div>
+			</div>
+			<div id="row2">
+				<div id="person">
+					<img id="personpic" src="images/head4.jpg">
+					<h5 id="personname">SARA JOHNSON</h5>
+					<p id="persondescri">Creative Head</p>
+				</div>
+				<div id="person">
+					<img id="personpic" src="images/head5.jpg">
+					<h5 id="personname">MATT ALEX</h5>
+					<p id="persondescri">Creative Head</p>
+				</div>
+				<div id="person">
+					<img id="personpic" src="images/head6.jpg">
+					<h5 id="personname">CHRIS PHILIPS</h5>
+					<p id="persondescri">Art Director</p>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	</section>
+	
+	<div id="sec7">
+		<div id="test7"><br><br>
+			<h1 id="lifeheading">Life in Zippy</h1><br>
+		
+			<div class="carousel" data-flickity='{"wraparound" : false, "autoplay" : false}'>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				<div class="carousel-cell">
+				<img class="w3-image" src="img1.jpg"/>
+				</div>
+				
+			</div>
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"?></script>
+			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+		</div>
+	</div>
+	<div id="sec8">
+		<div id="test8">
+			<br>
+			<h1 id="newsletterhead">Newsletter Signup</h1><br><br>
+			<input type="text" id="newstext" placeholder="abc@example.com">
+			<input type="submit" id="newssubmit" value="SIGN UP" ></input>
+		</div>
+	</div>
+	<section id="blog-section">
+	<div id="sec9">
+		<div id="test9">
+			<br>
+			<h1 id="bloghead">Blog</h1>
+			<ul id="blogul">
+				<li id="blogli">
+					<img src="images/peep1.jpg" id="blogpic">
+					<h5 id="blogh5">LOREM IPSUM DOLOR SIT AMET</h5>
+					<p id="blog">15 Jan, 2015</p>
+					<p id="blogwrite" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi omnis quam, laboriosam fuga.</p><br>
+					<button id="readmore">READ MORE</button>
+				</li>
+				<li id="blogli" >
+					<img src="images/peep2.jpg" id="blogpic">
+					<h5  id="blogh5">LOREM IPSUM DOLOR SIT AMET</h5>
+					<p id="blog">15 Jan, 2015</p>
+					<p id="blogwrite" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi omnis quam, laboriosam fuga.</p><br>
+					<button id="readmore">READ MORE</button>
+				</li>
+				</li>
+				<li id="blogli">
+					<img src="images/peep3.jpg" id="blogpic">
+					<h5  id="blogh5">LOREM IPSUM DOLOR SIT AMET</h5>
+					<p id="blog">15 Jan, 2015</p>
+					<p id="blogwrite" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi omnis quam, laboriosam fuga.</p><br>
+					<button id="readmore">READ MORE</button>
+				</li>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</section>
+	<section id="contact-section">
+	<div id="sec10">
+		<div id="test10"><br><br>
+			<img src="images/map.jpg" id="mappic">
+			<div id="contact" >
+				<div id= "minicontact">
+					<br><h1 id="contacthead" >Contact</h1><br>
+					<h6 id="thing">NAME</h6><br>
+					<input type="text" id="textbox" ><br><br>
+					<h6 id="thing">EMAIL ADDRESS</h6><br>
+					<input type="text" id="textbox" ><br><br>
+					<h6 id="thing">SUBJECT</h6><br>
+					<input type="text"  id="textbox"><br><br>
+					<h6 id="thing">MESSAGE</h6><br>
+					<input type="text" id="msgbox" ><br><br>
+					<input type="submit" value="SEND" id="sendbtn"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<div id="sec11">
+		<div id="test11">
+			
+			<ul>
+				<li id="footerli">
+					<h6 id="footerheads">OFFICE ADDRESS</h6>
+					<p id="footerwrite">Lorem Ipsum dolor, 234 <br>1200 Consecture<br>Adipsohing</p>
+				</li>
+				<li id="footerli">
+					<h6 id="footerheads">FOLLOW US</h6>
+					<div id="footicons">
+						<ul id="iconsul">
+							<li id="iconli">
+								<img src="images/be.png" id="icons">
+							</li>
+							<li id="iconli">
+								<img src="images/twitter.png" id="icons">
+							</li>
+							<li id="iconli">
+								<img src="images/in.png" id="icons">
+							</li>
+						</ul>
+						<ul id="iconsul2">
+							<li id="iconli">
+								<img src="images/f.png" id="icons">
+							</li>
+							<li id="iconli">
+								<img src="images/g.png" id="icons">
+							</li>
+							<li id="iconli">
+								<img src="images/t.png" id="icons">
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li id="footerli">
+					<h6 id="footerheads">CONTACT US</h6>
+					<p id="footerwrite">+123 456 789<br>zippy@skype<br>enquiry@zippy.com</p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>
